@@ -12,3 +12,9 @@
 */
 
 Route::get("/", "PagesController@root")->name('root');
+Route::get('/home', 'PagesController@root')->name('home');
+
+/**
+ * @see \Illuminate\Routing\Router::auth()
+ */
+Auth::routes(['verify' => true]);
