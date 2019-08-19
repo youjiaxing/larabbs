@@ -10,4 +10,9 @@ class Category extends Model
         'name',
         'description'
     ];
+
+    public function topics()
+    {
+        return $this->hasMany(Topic::class);
+    }
 }
